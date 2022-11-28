@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/resim"
+        android:src="@drawable/pizza"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:id="@+id/evet1"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@+id/resim"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+
+        android:background="#f00"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textColor="@color/white"
+            android:id="@+id/kucukBoy"
+            android:text="Küçük Boy (20₺)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:textColor="@color/white"
+            android:id="@+id/ortaBoy"
+            android:text="Orta Boy (25₺)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:textColor="@color/white"
+            android:id="@+id/buyukBoy"
+            android:text="Büyük Boy (30₺)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RadioGroup>
+    <RadioGroup
+        android:background="#f00"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textColor="@color/white"
+            android:id="@+id/inceHamur"
+            android:text="İnce Hamur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:textColor="@color/white"
+            android:id="@+id/kalinHamur"
+            android:text="Kalın Hamur (+2₺)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#00f"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/evet1"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/resim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/sucukCB"
+            android:text="Sucuk (5₺)"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/soganCB"
+            android:text="Soğan (3₺)"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/ybiberCB"
+            android:text="Yeşil Biber (2₺)"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/kbiberCB"
+            android:text="Kırmızı Biber (2₺)"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/mantarCB"
+            android:text="Mantar (3₺)"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+<Button
+    android:id="@+id/siparisB"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="Sipariş Ver"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
