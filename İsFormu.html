@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>İş Başvuru Formu</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1><strong>İŞ BAŞVURU FORMU</strong></h1>
+        <form action="" autocomplete="on">
+            <img src="img/avatar.jpg" alt="profil" height="250px" width="250px">
+            Fotoğraf Seçiniz <input type="file" name="foto"><br>
+            Cinsiyet<input type="radio" name="cinsiyet" value="erkek">Erkek &nbsp;
+            <input type="radio" name="cinsiyet" value="kadin">Kadın &nbsp;
+            <input type="radio" name="cinsiyet" value="heli">Atak Helikopteri<br>
+            TC Kimlik No*<input type="text" name="ad" size="30" maxlength="20">
+            Ad*<input type="text" name="ad" size="30" maxlength="20">
+            Soyad*<input type="text" name="soyad" size="30" maxlength="30">
+            Doğum Tarihi* <input type="date" name="dtarih">
+        </form>
+        <h2><strong>KİŞİSEL BİLGİLER</strong></h2>
+        <form action="" autocomplete="on">
+            <label for="dogumyeri">Doğum Yeri*</label>
+            <select name="dogumyeri" id="dogumyeri">
+                <option value="Ankara">Ankara</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="İzmir">İzmir</option>
+            </select><br>
+            <label for="evet">Baba Adı/Mesleği</label>
+             <input type="text" id="evet" name="evet" placeholder="Baba Adı"><input type="text" id="evet" name="evet" placeholder="Mesleği">
+             <br><label for="hayir">Anne Adı/Mesleği</label>
+             <input type="text" id="evet" name="evet" placeholder="Anne Adı"><input type="text" id="evet" name="evet" placeholder="Mesleği"><br>
+             Askerlik Durumu*:<input type="checkbox" name="seyahat" value="yurtici">Muaf &nbsp;
+                         <input type="checkbox" name="seyahat" value="yurtici">Yaptı &nbsp;
+                         <input type="checkbox" name="seyahat" value="yurtici">Tescilli &nbsp;<br>
+        Muaf/Terhis/Tescil Tarihi* <input type="date" name="ttarih"><br>
+        Medeni Durumu* <input type="radio" name="durum" value="evli">Evli &nbsp;
+            <input type="radio" name="durum" value="bekar">Bekar &nbsp;<br>
+            <label for="notlar">Ev Adresi* </label><br>
+            <textarea name="4" cols="30" id="adres"></textarea><br>
+            <label for="sehir">Şehir*</label>
+            <select name="sehir" id="sehir">
+                <option value="secin">Seçiniz</option>
+                <option value="Ankara">Ankara</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="İzmir">İzmir</option>
+            </select>
+            <label for="sehir">İlçe*</label>
+            <select name="sehir" id="sehir">
+                <option value="secin">Seçiniz</option>
+                <option value="Ankara">Bağlıca</option>
+                <option value="İstanbul">Kadıköy</option>
+                <option value="İzmir">Bornova</option>
+            </select><br>
+            E-Posta*<input type="text" name="mail" size="40" maxlength="40">
+            Telefon<input type="tel" id="phone" name="phone">
+            Cep Telefonu*<input type="tel" id="phone" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </form>
+        <form action="" autocomplete="on">
+            <h2><strong>ÖĞRENİM DURUMU</strong></h2>
+            Lisans<input type="text" name="derece">
+            Bölüm<input type="text" id="bolum" name="bolum">
+            Başlama Tarihi<input type="text" id="bas" name="bas" placeholder="Başlama yılınızı giriniz...">
+            Mezuniyet Tarihi<input type="text" id="mezun" name="mezun" placeholder="Mezuniyet yılınızı giriniz..."><br>
+            Ön Lisans<input type="text" name="derece">
+            Bölüm<input type="text" id="bolum" name="bolum">
+            Başlama Tarihi<input type="text" id="bas" name="bas" placeholder="Başlama yılınızı giriniz...">
+            Mezuniyet Tarihi<input type="text" id="mezun" name="mezun" placeholder="Mezuniyet yılınızı giriniz..."><br>
+            Lise<input type="text" name="derece"><input type="text" id="bolum" name="bolum"><input type="text" id="bas" name="bas" placeholder="Başlama yılınızı giriniz..."><input type="text" id="mezun" name="mezun" placeholder="Mezuniyet yılınızı giriniz..."><br>
+            İlköğretim<input type="text" name="derece"><input type="text" id="bolum" name="bolum"><input type="text" id="bas" name="bas" placeholder="Başlama yılınızı giriniz..."><input type="text" id="mezun" name="mezun" placeholder="Mezuniyet yılınızı giriniz..."><br>
+        </form>
+        <form action="" autocomplete="on">
+            <h2><strong>ÇALIŞMA HAYATI</strong></h2>
+            BİLP201'de daha önce çalıştınız mı?:<input type="radio" name="evet" value="evet">Evet &nbsp;<input type="radio" name="hayir" value="hayir">Hayır &nbsp;<br>
+            Şirketimizde çalışan yakınınız var mı?:<input type="radio" name="evet" value="evet">Evet &nbsp;<input type="radio" name="hayir" value="hayir">Hayır &nbsp;
+            <p><strong>(Lütfen son çalıştığınız yerden itibaren yazınız)</strong></p>
+            İşyerinin Adı<input type="text" name="isyeri">Görev<input type="text" id="gorev" name="gorev">Başlama Tarihi<input type="text" id="bas" name="bas" placeholder="Başlama yılınız...">Bitiş Tarihi<input type="text" id="mezun" name="bit" placeholder="Bitiş yılınız...">Ayrılma Sebepleri<input type="text" id="ayrilik" name="ayrilik"><br>
+            İşyerinin Adı<input type="text" name="isyeri">Görev<input type="text" id="gorev" name="gorev">Başlama Tarihi<input type="text" id="bas" name="bas" placeholder="Başlama yılınız...">Bitiş Tarihi<input type="text" id="mezun" name="bit" placeholder="Bitiş yılınız...">Ayrılma Sebepleri<input type="text" id="ayrilik" name="ayrilik"><br>
+            İşyerinin Adı<input type="text" name="isyeri">Görev<input type="text" id="gorev" name="gorev">Başlama Tarihi<input type="text" id="bas" name="bas" placeholder="Başlama yılınız...">Bitiş Tarihi<input type="text" id="mezun" name="bit" placeholder="Bitiş yılınız...">Ayrılma Sebepleri<input type="text" id="ayrilik" name="ayrilik">
+        </form>
+        <form action="" autocomplete="on">
+            <h2><strong>REFERANSLAR</strong></h2>
+            <p><strong>(Çalıştığınız şirketlerden, çalışmıyor ise öğretmen veya akrabanız olmayan kişilerden en az bir referans yazmalısınız)</strong></p>
+            Adı Soyadı*<input type="text" name="adsoyad">Yakınlık Derecesi<input type="text" id="yakin" name="yakin">İşyerinin Adı*<input type="text" id="isadi" name="isadi">Görev*<input type="text" id="gorev" name="gorev">Telefon*<input type="text" id="tel" name="tel"><br>
+            Adı Soyadı*<input type="text" name="adsoyad">Yakınlık Derecesi<input type="text" id="yakin" name="yakin">İşyerinin Adı*<input type="text" id="isadi" name="isadi">Görev*<input type="text" id="gorev" name="gorev">Telefon*<input type="text" id="tel" name="tel"><br>
+            Adı Soyadı*<input type="text" name="adsoyad">Yakınlık Derecesi<input type="text" id="yakin" name="yakin">İşyerinin Adı*<input type="text" id="isadi" name="isadi">Görev*<input type="text" id="gorev" name="gorev">Telefon*<input type="text" id="tel" name="tel">
+        </form>
+        <form action=""  autocomplete="on">
+            <h2><strong>DİĞER BİLGİLER</strong></h2>
+            Sigara kullanıyor musunuz? <input type="radio" name="evet">Evet &nbsp; <input type="radio" name="hayir">Hayır &nbsp;<br>
+            Çalışmaya engel bir sağlık sorununuz var mı? <input type="radio" name="evet">Evet &nbsp; <input type="radio" name="hayir">Hayır &nbsp;<br>
+            <textarea name="aciklama" id="saglik" cols="50" rows="10" placeholder="Sağlık durumunuzun açıklaması"></textarea><br>
+            Herhangi bir suçtan dolayı yargılandınız mı? <input type="radio" name="evet">Evet &nbsp; <input type="radio" name="hayir">Hayır &nbsp;<br>
+            <textarea name="aciklama" id="saglik" cols="50" rows="10" placeholder="Yargılanma sürecinizin açıklaması"></textarea><br>
+            Çalışmak istediğiniz pozisyon <input type="radio">Full-Time Elemanı <input type="radio">Part-Time Elemanı <input type="radio">Mağaza Yöneticisi <input type="radio">Diğer <br>
+            Beklenen Ücret(Net)* <input type="text" placeholder="TL" width="20">
+            <input type="checkbox" name="pp" id="pp">Yukarıda verilen bilgilerin doğru olduğunu teyit eder. Kişisel Verilerin Korunmasına İlişkin <a href="">Bilgilendirmeyi</a>okudum kabul ediyorum. <br>Vereceğiniz kişisel bilgileriniz iş başvurusu ve değerlendirme
+            süreçlerinde tarafımızca işlenecektir (KVKK) metnine <a href="">buradan</a> ulaşabilirsiniz. <br>
+            <input type="submit" name="form" value="FORMU GÖNDER">
+        </form>
+    </body>
+</html>
