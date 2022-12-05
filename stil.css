@@ -1,0 +1,59 @@
+html
+{
+    background-color: white;
+    width: 800px;
+}
+#top
+{
+    background-color: rgb(55, 150, 55);
+    color: white;
+}
+.wrapper
+{
+    display: flex;
+}
+.menuitema
+{
+    background-color: rgb(55, 150, 55);
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 2px;
+}
+.menuitem
+{
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 2px;
+}
+#main
+{
+    text-align: left;
+    width: 370px;
+    margin: auto;
+}
+#sidebar
+{
+    padding-top: 0;
+    float: right;
+    text-align: left;
+    width: 155px;
+    background-color: rgb(59, 147, 202);
+    color: white;
+}
+#bottom
+{
+    float: right;
+    text-align: center;
+    width: 800px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 5px;
+    flex-direction: column;
+}
+ul
+{
+    text-align: left;
+    float: left;
+    width: 150px;
+    margin-right: 5px;
+    padding-left: 0;
+    list-style-type: none;
+}
