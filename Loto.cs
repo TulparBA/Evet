@@ -44,7 +44,7 @@ namespace Evet2
 
                 /*if(textBox1==listBox1)*/
             }
-            if (textBox1.Text == "")
+            /*if (textBox1.Text == "")
             {
                 errorProvider1.SetError(textBox1, "Bu alan boş geçilemez");
             }
@@ -83,8 +83,15 @@ namespace Evet2
             if (textBox10.Text == "")
             {
                 errorProvider10.SetError(textBox10, "Bu alan boş geçilemez");
+            }*/
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                errorProvider1.SetError(textBox1, "Numara boş bırakılamaz");
             }
-
+            /*else
+            {
+                errorProvider1.SetError(textBox1, "");
+            }*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -141,6 +148,137 @@ namespace Evet2
             listBox1.ClearSelected();
             listBox2.Items.Clear();
 
+        }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox1, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox1, "");
+            }
+
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox2.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox2, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox2, "");
+            }
+        }
+
+        private void textBox3_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox3.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox3, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox3, "");
+            }
+        }
+
+        private void textBox4_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox4.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox4, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox4, "");
+            }
+        }
+
+        private void textBox5_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox5.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox5, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox5, "");
+            }
+        }
+
+        private void textBox6_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox6.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox6, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox6, "");
+            }
+        }
+
+        private void textBox7_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox7.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox7, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox7, "");
+            }
+        }
+
+        private void textBox8_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox8.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox8, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox8, "");
+            }
+        }
+
+        private void textBox9_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox9.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox9, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox9, "");
+            }
+        }
+
+        private void textBox10_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox10.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBox10, "Numara boş bırakılamaz");
+            }
+            else
+            {
+                errorProvider1.SetError(textBox10, "");
+            }
         }
     }
 }
